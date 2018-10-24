@@ -29,7 +29,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/sprite.js"></script>
     <script>
-
+        /**
+         * Vale recapitular um conceito importante do JavaScript, o conceito de closure. O objeto retornado por createSprite guarda em uma de suas propriedades a função nextFrame() criada internamente em createSprite
+         */
         var sprite = createSprite('.sprite');
         setInterval(function () {
             sprite.nextFrame();
